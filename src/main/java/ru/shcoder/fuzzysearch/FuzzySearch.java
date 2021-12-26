@@ -38,12 +38,14 @@ public class FuzzySearch implements FuzzySearchable {
     }
 
     /**
+     * Changed to public in this fork
+     *
      * Get similarity score of list item and input
      * @param text - Source list item
      * @param input - Search query string
      * @return Average score
      */
-    private double getSimilarityScore(String text, String input) {
+    public double getSimilarityScore(String text, String input) {
         long totalWeight = 0;
         double totalScoreWithWeight = 0;
         text = text.toLowerCase();
